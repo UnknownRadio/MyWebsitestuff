@@ -187,23 +187,7 @@
                 </a>
             </li>
         </ul>
-        <div class="music-player">
-            <audio controls id="audio-player">
-              <source src="https://dl.avaplus.site/Musics/khordad1403/Fellini%20F%C3%A9lin%20-%20On%20The%20Way%20Home.mp3" type="audio/mp3">
-              Your browser does not support the audio element.
-          </audio>
-            <div class="controls">
-                <button onclick="togglePlayPause()" id="play-pause-button">
-                  <i class="fas fa-play"></i>
-              </button>
-                <div class="progress-bar">
-                    <input type="range" min="0" max="100" value="0" step="0.1" id="progress-bar">
-                </div>
-            </div>
-            <div id="duration-info">
-                <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
-            </div>
-        </div>
+       
     </div>
 
     </div>
@@ -224,8 +208,7 @@
             profileCard.style.opacity = '1';
             profileCard.style.transform = 'translateY(0)';
         
-            audioPlayer.play();
-            playPauseButton.innerHTML = '<i class="fas fa-pause"></i>';
+           
         }
         
         function updateProgressBar() {
